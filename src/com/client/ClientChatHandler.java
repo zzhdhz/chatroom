@@ -11,7 +11,7 @@ import java.awt.*;
  * @Author JamH
  * Created by form on 2017-07-20.
  */
-public class ChatHandler extends SimpleChannelInboundHandler<String> {
+public class ClientChatHandler extends SimpleChannelInboundHandler<String> {
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, String str) throws Exception{
