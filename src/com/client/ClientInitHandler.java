@@ -13,10 +13,10 @@ import javax.swing.*;
  * @Author JamH
  * Created by form on 2017-07-20.
  */
-public class InitHandler extends ChannelInitializer<SocketChannel> {
+public class ClientInitHandler extends ChannelInitializer<SocketChannel> {
 
     @Override
-    protected void initChannel(SocketChannel socketChannel) throws Exception{
+    protected void ClientInitHandler(SocketChannel socketChannel) throws Exception{
         ChannelPipeline pipeline = socketChannel.pipeline();
         pipeline.addLast("stringD", new StringDecoder());
         pipeline.addLast("stringC", new StringEncoder());
