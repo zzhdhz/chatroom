@@ -1,6 +1,6 @@
-package com.chatroom.io.client;
+package com.client;
 
-import com.chatroom.swing.window.WindowController;
+import com.client.window.WindowController;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 
@@ -11,7 +11,7 @@ import java.awt.*;
  * @Author JamH
  * Created by form on 2017-07-20.
  */
-public class ClientChatHandler extends SimpleChannelInboundHandler<String> {
+public class ChatHandler extends SimpleChannelInboundHandler<String> {
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, String str) throws Exception{
